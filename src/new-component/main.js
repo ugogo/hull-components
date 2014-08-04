@@ -1,6 +1,7 @@
 Hull.component({
   templates: ['main', 'partials/footer'],
   datasources: {
+    mycustomvar: "/me/friends"
   },
   options: {
   },
@@ -12,6 +13,16 @@ Hull.component({
   },
   beforeRender: function(data){
     console.warn('beforeRender');
+    var isLogged = Hull.currentUser();
+    if(isLogged === null){
+      console.warn('Please login');
+      return;
+    }
+    var userFriends = data.mycustomvar;
+    if(userFriends !== undefined)
+      console.info('So you have friend(s) on this app...', userFriends);
+    else
+      console.info('Sorry but you are friendless');
   },
   afterRender: function(){
     console.warn('afterRender');

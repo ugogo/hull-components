@@ -36,3 +36,36 @@ console.info('options:', this.options);
 console.info('data-hull-foo:', this.options.foo);
 console.info('data-hull-bar:', this.options.bar);
 ```
+
+## Datasources
+Datasources are (easier) ajax call to the Hull API.
+Example if you want to get the current user's friends
+1 - In `src/component-name/main.js` update datasources object to
+```javascript
+datasources: {
+  mycustomvar: "/me/friends"
+}
+```
+2 - You can access to this in the `beforeRender` and `afterRender` function
+```javascript
+beforeRender: function(data){
+  console.warn('initialize called');
+  var isLogged = Hull.currentUser();
+  if(isLogged === null){
+    console.warn('Please login');
+    return;
+  }
+  var userFriends = data.mycustomvar;
+  if(userFriends !== undefined)
+    console.info('So you have friend(s) on this app...', userFriends);
+  else
+    console.info('Sorry but you are friendless');
+}
+```
+3 - It can also work with a quiz and his leaderboard
+```javascript
+datasources: {
+  quiz: ":id?fields=badge",
+  leaders: ":id/leaderboards/best-score?wrapped=true"
+}
+```
