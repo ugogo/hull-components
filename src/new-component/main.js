@@ -1,5 +1,5 @@
 Hull.component({
-  templates: ['main'],
+  templates: ['main', 'partials/footer'],
   datasources: {
   },
   options: {
