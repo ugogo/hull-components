@@ -39,7 +39,9 @@ console.info('data-hull-bar:', this.options.bar);
 
 ## Datasources
 Datasources are (easier) ajax call to the Hull API.
+
 Example if you want to get the current user's friends
+
 1 - In `src/component-name/main.js` update datasources object to
 ```javascript
 datasources: {
@@ -72,7 +74,9 @@ datasources: {
 
 ## Sandbox methods
 Sandbox offers methods to access data, make calls, emit events and subscribe to them.
+
 [Sandbox documentation](http://hull.io/docs/components/reference#the-sandbox)
+
 Example, check if the current user is admin
 ```javascript
 if(isLogged === null){
