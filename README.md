@@ -20,3 +20,15 @@
 2. Create a new .hbs file `src/component-name/partials/partial-name`
 3. Update `templates: ['main', 'partials/partial-name']` in `src/component-name/main.js`
 4. In any `.hbs` file, add `{{> component-name/partials/partial-name}}`
+
+## Passing data-params
+1. In `.html` file, update with
+```html
+<div data-hull-component="new-component" data-hull-foo="bar" data-hull-bar="foo"></div>
+```
+2. Get those options in `main.js`
+```javascript
+console.info('options:', this.options);
+console.info('data-hull-foo:', this.options.foo);
+console.info('data-hull-bar:', this.options.bar);
+```
