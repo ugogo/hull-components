@@ -69,3 +69,15 @@ datasources: {
   leaders: ":id/leaderboards/best-score?wrapped=true"
 }
 ```
+
+## Sandbox methods
+Sandbox offers methods to access data, make calls, emit events and subscribe to them.
+[Sandbox documentation](http://hull.io/docs/components/reference#the-sandbox)
+Example, check if the current user is admin
+```javascript
+if(isLogged === null){
+  console.warn('Please login');
+  return;
+}
+console.warn('Is user admin?', this.sandbox.isAdmin());
+```

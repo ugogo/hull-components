@@ -23,6 +23,7 @@ Hull.component({
       console.info('So you have friend(s) on this app...', userFriends);
     else
       console.info('Sorry but you are friendless');
+    console.warn('Is user admin?', this.sandbox.isAdmin());
   },
   afterRender: function(){
     console.warn('afterRender');
