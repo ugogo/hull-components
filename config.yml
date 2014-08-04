@@ -1,0 +1,7 @@
+version: 0.8
+init:
+  appId: "53a2a82f6402117ebb000346"
+  orgUrl: "https://835b18df.hullapp.io"
+  debug: true
+  sources:
+    default: '.'
