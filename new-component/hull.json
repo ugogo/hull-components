@@ -1,14 +1,15 @@
 {
   "name": "new-component",
-  "version": "cf39b87a480d7388aa72da011925049fbf6a2872",
+  "version": "c4498ca606e48df35cd6e0aa52c91a2042e49964",
   "files": {
     "templates": [
-      "main.hbs"
+      "main.hbs",
+      "partials/footer.hbs"
     ],
     "stylesheets": [],
     "javascripts": [
       "main.js"
     ]
   },
-  "buildDate": "2014-08-04T09:24:21.184Z"
+  "buildDate": "2014-08-04T13:38:26.558Z"
 }
