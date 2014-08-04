@@ -1,0 +1,14 @@
+{
+  "name": "new-component",
+  "version": "cf39b87a480d7388aa72da011925049fbf6a2872",
+  "files": {
+    "templates": [
+      "main.hbs"
+    ],
+    "stylesheets": [],
+    "javascripts": [
+      "main.js"
+    ]
+  },
+  "buildDate": "2014-08-04T09:24:21.184Z"
+}
