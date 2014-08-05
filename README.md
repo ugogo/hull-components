@@ -87,7 +87,7 @@ console.warn('Is user admin?', this.sandbox.isAdmin());
 ```
 
 ## Handlebars useful markup
-### Check if currentUser is logged in
+* Check if currentUser is logged in
 ```
 {{#if loggedIn}}
   hey i'm loggin
@@ -96,7 +96,7 @@ console.warn('Is user admin?', this.sandbox.isAdmin());
 {{/if}}
 ```
 
-### Check if currentUser is admin
+* Check if currentUser is admin
 ```
 {{#if isAdmin}}
   hey i'm admin
