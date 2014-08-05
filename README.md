@@ -104,3 +104,16 @@ console.warn('Is user admin?', this.sandbox.isAdmin());
   i'm not admin
 {{/if}}
 ```
+
+### Print JSON from datasources
+```javascript
+datasources: {
+  currentUserFriends: "/me/friends"
+}
+In any `.hbs` file
+```html
+<pre>
+  {{json currentUserFriends}}
+</pre>
+```
+

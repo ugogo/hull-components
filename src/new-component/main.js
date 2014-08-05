@@ -1,7 +1,7 @@
 Hull.component({
   templates: ['main', 'partials/footer'],
   datasources: {
-    mycustomvar: "/me/friends"
+    currentUserFriends: "/me/friends"
   },
   options: {
   },
@@ -18,7 +18,7 @@ Hull.component({
       console.warn('Please login');
       return;
     }
-    var userFriends = data.mycustomvar;
+    var userFriends = data.currentUserFriends;
     if(userFriends !== undefined)
       console.info('So you have friend(s) on this app...', userFriends);
     else
