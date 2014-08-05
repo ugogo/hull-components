@@ -85,3 +85,22 @@ if(isLogged === null){
 }
 console.warn('Is user admin?', this.sandbox.isAdmin());
 ```
+
+## Handlebars useful markup
+### Check if currentUser is logged in
+```
+{{#if loggedIn}}
+  hey i'm loggin
+{{else}}
+  i'm not loggin
+{{/if}}
+```
+
+### Check if currentUser is admin
+```
+{{#if isAdmin}}
+  hey i'm admin
+{{else}}
+  i'm not admin
+{{/if}}
+```

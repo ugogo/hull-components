@@ -1,3 +1,17 @@
 <h1>Hey oh, I'm in main.hbs</h1>
 <div data-hull-component="login/button@hull"></div>
 {{> new-component/partials/footer}}
+
+<h2>Check if current user is loggin</h2>
+{{#if loggedIn}}
+  hey i'm loggin
+{{else}}
+  i'm not loggin
+{{/if}}
+
+<h2>Check if current user is Admin</h2>
+{{#if isAdmin}}
+  hey i'm admin
+{{else}}
+  i'm not admin
+{{/if}}
