@@ -6,6 +6,12 @@ Hull.component({
   options: {
   },
   actions: {
+    log: function(evt, action){
+      console.info('clicked');
+      console.info(action.data);
+      console.info('data passed (foo):', action.data.foo)
+      console.info('data passed (bar):', action.data.bar)
+    }
   },
 
   initialize: function(){

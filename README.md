@@ -86,6 +86,26 @@ if(isLogged === null){
 console.warn('Is user admin?', this.sandbox.isAdmin());
 ```
 
+## Custom actions
+Trigger action on click on an html element
+
+In any `hbs` file
+```html
+<button data-hull-action="actionName" data-hull-foo="bar" data-hull-bar="foo">Log</button>
+```
+In `src/component-name/main.js`
+```javascript
+actions: {
+  actionName: function(evt, action){
+    console.info('clicked');
+    console.info(action.data);
+    console.info('data passed (foo):', action.data.foo)
+    console.info('data passed (bar):', action.data.bar)
+  }
+}
+```
+
+
 ## Handlebars useful markup
 * Check if currentUser is logged in
 ```
