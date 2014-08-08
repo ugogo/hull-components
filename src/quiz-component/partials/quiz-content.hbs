@@ -2,10 +2,10 @@
 
 <h2>Questions</h2>
 {{#each quiz.questions}}
-  <h4>{{name}}</h4>
+  {{@index}}<h4>{{name}}</h4>
   <h5>Answers</h5>
   <ul></ul>
   {{#each answers}}
-    <li>{{name}}</li>
+    <li>{{@index}}: {{name}}</li>
   {{/each}}
 {{/each}}
