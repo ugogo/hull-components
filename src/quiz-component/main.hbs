@@ -1,1 +1,18 @@
 <h1>Component-quiz</h1>
+
+<div data-hull-component="login/button@hull" data-hull-provider="{{loginProviders}}"></div>
+
+{{#if loggedIn}}
+  <h4>hello {{me.name}}</h4>
+  <button data-hull-action="startQuiz">Start the quiz</button>
+{{else}}
+  Please login
+{{/if}}
+
+
+
+<hr>
+<h3>Quiz JSON</h3>
+<pre>
+  {{json quiz}}
+</pre>
