@@ -125,6 +125,20 @@ actions: {
 {{/if}}
 ```
 
+* Basic loop from JSON
+```
+{{#each jsonEntry}}
+  {{title}}
+{{/each}}
+```
+
+* Get loop index
+```
+{{#each quiz.questions}}
+  {{@index}}
+{{/each}}
+```
+
 * Print JSON from datasources
 
 In `src/component-name/main.js`
